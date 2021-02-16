@@ -1,0 +1,19 @@
+//non-1 smallest and non-n biggest divisor of an integer (N>1)
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int N,D,i;
+	i = 2;
+	N = 13;
+	while (N % i != 0){
+		++i;
+	}
+	SD = i;
+  GD = N/i;
+	cout <<SD <<GD;
+	
+	return 0;
+}

@@ -1,0 +1,18 @@
+//non-1 smallest divisor of an integer (N>1)
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int N,D,i;
+	i = 2;
+	N = 13;
+	while (N % i != 0){
+		++i;
+	}
+	D = i;
+	cout <<D;
+	
+	return 0;
+}

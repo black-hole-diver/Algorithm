@@ -1,0 +1,22 @@
+/find the sum of odd divisors of a countable number
+
+#include <iostream>
+using namespace std;
+
+int main(void)
+{
+	int sum = 0;
+	int i = 1;
+	int n = 15;
+	while (i<=n){
+		if (n%i==0){
+			sum = sum + i;
+			i = i + 2;
+		}
+		else{
+			i = i + 2;
+		}
+	}
+	cout <<sum;
+	return 0;
+}

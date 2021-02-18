@@ -1,0 +1,17 @@
+//Is a number 3 digits?
+
+#include <iostream>
+using namespace std;
+
+int main(void){
+        int N;
+        cout <<"Is N 3 digits?\nGive me N:\n";
+        cin >>N;
+        if (99 < N && N < 1000){
+                cout <<"True\n";
+        }
+        else{
+                cout <<"False\n";
+        }
+        return 0;
+}

@@ -1,4 +1,12 @@
- f (int s [], int n){
+ /*Definition of "monotone increasing" from WolframeMathWorld:
+"Always increasing; never remaining constant or decreasing. Also called strictly increasing."
+ref-> https://mathworld.wolfram.com/MonotoneIncreasing.html*/
+
+#include <iostream>
+using namespace std;
+
+//function
+void f (int s [], int n){
 	
 	int increasing = 0; // True
 		
@@ -18,7 +26,7 @@
 	}
 }
 
-// Driver code 
+// Driver
 int main() 
 { 
     int s [] = { -1, 20, 211, 212, 223, 225, 2244, 2245, 3000, 4501, 451111 }; 

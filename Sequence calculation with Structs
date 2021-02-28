@@ -1,0 +1,27 @@
+/*asset*/
+
+#include <iostream>
+using namespace std;
+
+struct Incex {
+	int in;
+	int out;
+} ;
+
+/*or typedef struct {
+int in;
+int out;
+} incex;*/
+
+const Incex inc[12] = {{400,330},{410,390},
+{398,400},{400,300},{421,380},{395,320},{400,330},{410,390},
+{398,400},{400,300},{421,380},{395,320}};
+
+int main()
+{
+	int S=0;
+	for (int i=0;i<12;i++){
+		S=S+inc[i].in - inc[i].out;
+	}
+	cout <<S;
+}
